@@ -1,0 +1,34 @@
+form {
+display: flex;
+font-family: sans-serif;
+flex-direction: column;
+justify-content: center;
+}
+textarea {
+  border: none;
+  border-bottom: 2px solid;
+  background-color: #f4f1ec;
+  
+}
+
+form div {
+
+  font-family: 'Bungee', sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  
+}
+button {
+  background-color: blue;
+  width: 60px;
+  height: 30px;
+  color: aliceblue;
+  border: none;
+}
+
+form label {
+  display: flex;
+  justify-content: flex-start;
+}
