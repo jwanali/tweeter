@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css">
+    <link rel="stylesheet" href="/styles/tweet-container.css" type="text/css">
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     
@@ -59,7 +60,7 @@
     </header>
 
     <!-- Page-specific (main) content here -->
-    <main class="container">
+    <main class="container" id="main-container">
       
         <section class="new-tweet">
           <h2>Compose Tweet</h2>
@@ -72,9 +73,21 @@
             </div>
           </form>
         </section>
-     
-      
-     
+        <section>
+          <article class="tweet">
+            <header>
+              <img src="/images/profile-hex.png" />
+              
+              <h3>Newten</h3>
+            </header>
+            <p>Note that a box-shadow is applied to the tweet when the user hovers on it. Each icon also changes colour.</p>
+            <footer>
+              <i class="fa-solid fa-flag"></i>
+              <i class="fa-solid fa-retweet"></i>
+              <i class="fa-solid fa-heart"></i>
+            </footer>
+          </article>
+        </section>
     </main>
   </body>
 </html>
