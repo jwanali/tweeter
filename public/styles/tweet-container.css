@@ -8,10 +8,17 @@ article.tweet {
 }
 article.tweet header {
   display: flex;
+  justify-content: space-between;
   background-color: #f4f1ec;
  background-image: none;
  margin-top: 1px;
  height: 130px;
+}
+article.tweet header div {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+
 }
 
 article.tweet header img{
@@ -24,16 +31,24 @@ article.tweet p {
  margin: 1em;
   border-bottom: 2px solid;
   background-color: #f4f1ec;
+  text-align: justify;
+ 
+  word-wrap: break-word;
   
 }
-article.tweet footer {
+article.tweet footer{
   display: flex;
     
-    justify-content: flex-end;
+  justify-content: space-between;
     
+}
+article.tweet footer div{
+  display: flex;
+  flex-direction: row;
 }
 
 article.tweet i {
+ 
   margin: 10px;
   padding: 5px ;
   margin-top: 2px;
@@ -46,4 +61,19 @@ article.tweet i:hover{
 article.tweet:hover {
   box-shadow: 5px 5px;
   color: rgb(108, 89, 89);
+}
+article.tweet header h5 {
+  margin-right: 2em;
+}
+
+#error_messge {
+  
+  background: #fb85a6 !important;
+  padding: 10px !important;
+  border-radius: 0 !important;
+  position: relative; 
+  display: inline-block !important;
+  box-shadow: 1px 1px 1px #aaaaaa;
+  margin-top: 10px;
+  visibility: hidden;
 }

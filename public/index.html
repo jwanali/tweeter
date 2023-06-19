@@ -37,6 +37,7 @@
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </head>
 
   <body>
@@ -51,7 +52,7 @@
     </nav>
     <header>
       <div>
-        <img src="/images/profile-hex.png" />
+        <img src="/images/profile-hex.png" alt="working on it" title="avatar"/>
       </div>
       <br />
       <div>
@@ -63,8 +64,9 @@
     <main class="container" id="main-container">
       
         <section class="new-tweet">
+          <div id = 'error_messge'></div>
           <h2>Compose Tweet</h2>
-          <form method="post" action="/tweet">
+          <form method="post" action="/tweet"> <!--method="post" action="/tweet"-->
             <label for="tweet-text">What are you humming about?</label>
             <textarea name="text" id="tweet-text"></textarea>
             <div>
@@ -73,20 +75,8 @@
             </div>
           </form>
         </section>
-        <section>
-          <article class="tweet">
-            <header>
-              <img src="/images/profile-hex.png" />
-              
-              <h3>Newten</h3>
-            </header>
-            <p>Note that a box-shadow is applied to the tweet when the user hovers on it. Each icon also changes colour.</p>
-            <footer>
-              <i class="fa-solid fa-flag"></i>
-              <i class="fa-solid fa-retweet"></i>
-              <i class="fa-solid fa-heart"></i>
-            </footer>
-          </article>
+       
+        <section id="tweets-container">
         </section>
     </main>
   </body>
