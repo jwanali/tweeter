@@ -2,25 +2,16 @@ nav {
   height: 120px;
   top: 0;
   width: 100% !important;
-
-  background-color: #4056A1;
+  background-image: url(../images/black-mamba.png);
   color: #ffffff;
   display: flex;
-
-  padding-right: 1.5em;
-  padding-left: 1.5em;
+  background-color: #4056A1;
+  
   justify-content: space-between;
   align-items: center;
-  /*z-index: 1;*/
   position: fixed;
-  
-  
-}
-span {
   font-family: 'Bungee', sans-serif;
-  
- 
-
+  padding: 1.5em;
 }
 
 div {

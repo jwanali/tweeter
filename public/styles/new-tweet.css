@@ -1,13 +1,16 @@
 form {
 display: flex;
 font-family: sans-serif;
+font-style: italic;
 flex-direction: column;
 justify-content: center;
+margin: 2px;
 }
 textarea {
   border: none;
   border-bottom: 2px solid;
   background-color: #f4f1ec;
+  
   
 }
 
@@ -31,4 +34,8 @@ button {
 form label {
   display: flex;
   justify-content: flex-start;
+}
+.compose_tweet {
+  margin-top: 120px;
+  display: none;
 }

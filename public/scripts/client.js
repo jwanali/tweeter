@@ -1,6 +1,5 @@
-$(document).ready(function () {
-  
-  const renderTweets = function (tweets) {
+$(document).ready(function() {
+  const renderTweets = function(tweets) {
     $("#tweets-container").empty();
     // loops through tweets
     for (let tweet = tweets.length - 1; tweet >= 0; tweet--) {
@@ -11,22 +10,19 @@ $(document).ready(function () {
     }
   };
   // takes object and return HTML code
-  const createTweetElement = function (tweetObject) {
+  const createTweetElement = function(tweetObject) {
     const $tweet = `<article class="tweet">
   <header>
     <div>
-      <img src="${
-        tweetObject.user.avatars
-      }" alt="working on it" title="avatar"/>
+      <img src="${tweetObject.user.avatars}" alt="working on it" title="avatar"
+      />
       <h3>${tweetObject.user.name}</h3>
       </div>
       <h5>${tweetObject.user.handle}</h5>
   </header>
   <p>${tweetObject.content.text}</p>
   <footer>
-    <time datetime="${tweetObject.created_at}">${timeago.format(
-      tweetObject.created_at
-    )}</time>
+    <time datetime="${tweetObject.created_at}">${timeago.format(tweetObject.created_at)}</time>
     <div>
       <i class="fa-solid fa-flag"></i>
       <i class="fa-solid fa-retweet"></i>
@@ -37,7 +33,7 @@ $(document).ready(function () {
     return $tweet;
   };
 
-  $("form").on("submit", function (event) {
+  $("form").on("submit", function(event) {
     event.preventDefault();
     $("#error_messge").css("visibility", "hidden");
     let text = $("#tweet-text").val();
@@ -64,17 +60,17 @@ $(document).ready(function () {
         method: "POST",
         url: "/tweets/",
         data: info,
-      }).then(function () {
+      }).then(function() {
         loadTweets();
       });
     }
   });
 
-  const loadTweets = function () {
+  const loadTweets = function() {
     $.ajax({
       method: "GET",
       url: `/tweets/`,
-    }).then(function (data) {
+    }).then(function(data) {
       renderTweets(data);
     });
   };

@@ -7,10 +7,6 @@ header {
   background-color: bisque;
   background-image: url(../images/black-mamba.png);
   padding-top: 1em;
+  
  
-}
-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

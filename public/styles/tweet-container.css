@@ -2,7 +2,7 @@ article.tweet {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 2em;
+  margin: 10px;
   border: 2px solid;
   height: 400px ;
 }
@@ -76,4 +76,67 @@ article.tweet header h5 {
   box-shadow: 1px 1px 1px #aaaaaa;
   margin-top: 10px;
   visibility: hidden;
+}
+main{
+  margin-top: 0px;
+}
+
+@media only screen and (max-width: 420px) {
+  nav {
+    font-size: 0.5em;
+  }
+ .header {
+  height: 350px;
+  font-size: 0.5em;
+ }
+ main {
+  font-size: 0.5em;
+ }
+
+}
+@media only screen and (min-width: 421px) and (max-width: 767px) {
+  /* Write Tablet only CSS here */
+  nav {
+    font-size: 0.75em;
+  }
+ .header {
+  font-size: 0.75em;
+ }
+ main {
+  font-size: 0.75em;
+ }
+}
+@media only screen and (min-width: 768px) {
+  /* Write CSS rules that target Tablets screen sizes upwards - including desktops */
+  nav {
+    font-size:1em;
+  }
+ .header {
+  font-size: 1em;
+ }
+ main {
+  font-size: 1em;
+ }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* Write CSS rules that target Laptop/Desktop screen sizes and beyond */
+  nav {
+    background-color: #4056A1;
+  }
+
+  .header {
+    margin-top: 150px;
+    width: 25%;
+    float: left;
+    position: fixed;
+  }
+  main {
+    margin-top: 2em;
+    width: 70%;
+    float: right;
+  }
+  .compose_tweet {
+    display: block;
+  }
 }
