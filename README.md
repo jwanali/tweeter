@@ -17,6 +17,6 @@ This repository is the starter code for the project: Students will fork and clon
 - Express
 - Node 5.10.x or above
 ## screenshots
-!["screenshot description"]()
-!["screenshot description"]()
-!["screenshot description"]()
+!["screenshot description"](https://github.com/jwanali/tweeter/blob/master/docs/tweet-box1.png?raw=true)
+!["screenshot description"](https://github.com/jwanali/tweeter/blob/master/docs/tweet-box2.png)
+!["screenshot description"](https://github.com/jwanali/tweeter/blob/master/docs/tweet-box3.png)
