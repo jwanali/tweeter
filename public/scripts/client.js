@@ -56,10 +56,14 @@ $(document).ready(function() {
     } else {
       // hide error message and post the tweet
       $("#error_messge").slideUp("slow");
+      $("#tweet-text").val('');
       $.ajax({
         method: "POST",
         url: "/tweets/",
         data: info,
+        error: function (request, status, error) {
+          alert('sorry an error occurred please try again');
+      }
       }).then(function() {
         loadTweets();
       });
